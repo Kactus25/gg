@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Начало</title>
+</head>
+<body>
+    <div class="box">
+        <form method="post" action="start/">
+            {% csrf_token %}
+            <p class="testname">Тест на<br> профориентацию<br></p>
+            <span class="testopis">данный тест должен помочь вам разобраться,<br>  какая из областей программирования будет для вас ближе</span> 
+            <!-- <p class="input"><input name="name" value="Гость"></p> -->
+            <div class="subblock">
+                <input type="submit" name="sub" value="Начать тест">
+            </div>
+        </form>
+    </div>
+    <img class="blik1" src="{% static 'blik.png' %}" width="35px">
+    <img class="blik2" src="{% static 'blik.png' %}" width="40px">
+    <img class="blik3" src="{% static 'blik.png' %}">
+    <img class="blik4" src="{% static 'blik.png' %}" width="30px">
+    <img class="circle1" src="{% static 'circle1.png' %}" width="50px">
+    <img class="circle2" src="{% static 'circle2.png' %}" width="210px">
+    <img class="circle3" src="{% static 'circle3.png' %}" width="100px">
+    <img class="circle4" src="{% static 'circle4.png' %}" width="170px">
+    <img class="krest1" src="{% static 'krest1.png' %}" width="25px">
+    <img class="krest2" src="{% static 'krest1.png' %}" width="40px">
+    <img class="krest3" src="{% static 'krest2.png' %}" width="50px">
+    <img class="ring" src="{% static 'ring.png' %}">
+    <div class="rings">
+        <img class="a1" src="{% static '3.png' %}">
+        <img class="a2" src="{% static '3.png' %}">
+        <img class="a3" src="{% static '3.png' %}">
+        <img class="a4" src="{% static '3.png' %}">
+        <img class="a5" src="{% static '3.png' %}">
+        <img class="a6" src="{% static '3.png' %}">
+        <img class="a7" src="{% static '3.png' %}">
+        <img class="a8" src="{% static '3.png' %}">
+        <img class="a9" src="{% static '3.png' %}">
+        <img class="a10" src="{% static '3.png' %}">
+    </div>
+</body>
+</html>
+

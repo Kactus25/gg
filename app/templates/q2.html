@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'question.css' %}">
+    <title>Вопрос2</title>
+    <style>
+        select[name="q2ans"]{
+            background-color: rgb(153, 5, 5);
+            border-radius: 5px;    
+            border: 0px;
+            padding-top: 5px;
+            padding-left: 100px;
+            padding-right: 100px;
+            color: white;
+        }
+        select[name="q2ans"]::-webkit-scrollbar{
+            width: 0;
+        }
+        select[name="q2ans"]:focus {
+            outline: none;
+        }
+        </style>
+</head>
+<body>
+    <div class="box">
+        <p class="question">{{name}}, вы крутой?</p>
+        <p>
+            <form method="post" action="q2/">
+                {% csrf_token %}
+                <select multiple name="q2ans">
+                        <option class="answears">Да</option>
+                        <option>Нет</option>
+                        <option>Возможно</option>
+                </select><br>
+                <input type="submit" name="sub" value="Далее">
+            </form>
+        </p>
+    </div>
+</body>
+</html>

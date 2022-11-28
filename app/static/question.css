@@ -1,0 +1,506 @@
+*,  
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes box1{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+@keyframes box2{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'calibri', sans-serif;
+    background-color:rgb(0, 0, 0);
+    background-image: url("fon.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Comfortaa', cursive;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;   
+    scroll-behavior: smooth;
+    z-index: 1;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+.box1{
+    max-width: 1300px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33vh;
+    text-align: center;
+    animation-name: box1;
+    animation-duration: 2s;
+    z-index: 2;
+}
+.box2{
+    max-width: 1500px;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    animation-name: box1;
+    animation-duration: 2s;
+    margin-top: 33vh;
+    z-index: 2;
+}
+.box3{
+    max-width: 1500px;
+    height: 50vh;
+    margin: auto;
+    text-align: center;
+    animation-name: box1;
+    animation-duration: 2s;
+    margin-top: 30vh;
+    z-index: 2;
+}
+.yak{
+    height: 1vh;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.question{
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: rgb(57, 117, 247);
+}
+input[type="radio"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-top: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+input[name="q2ans"]{
+    text-align: left;
+}
+label{
+    font-size: 26px;
+    color: rgb(184, 57, 247);
+    cursor: pointer;
+    transition: 0.5s;
+}
+label:hover{
+    color:rgb(150, 12, 131);
+}
+input:checked + label{
+    color:rgb(150, 12, 131);
+}
+input[name="sub"]{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -500px;
+    width: 200px;
+    height: 32px;
+    border: 0px;
+    cursor: pointer;
+    background: transparent;
+    background: linear-gradient(to right, #5005DE , #B11DA5);
+}
+.strdn{
+    margin-top: 3%;
+}
+.strup{
+    margin-top: -15%;
+    margin-bottom: 1.5%;
+}
+.subblock{
+    width: 100%;   
+    padding-top: 5%; 
+    text-align: center;
+}
+@keyframes krest1{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes krest2{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(-360deg);}
+}
+.ring{
+    top: 12%;
+    left: 75%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.ring2{
+    top: 39%;
+    left: 8%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.ring3{
+    top: 70%;
+    left: 70%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.ring4{
+    top: 5%;
+    left: 14%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-delay: 15s;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.ring5{
+    top: 60%;
+    left: 78%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-delay: 20s;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.ring6{
+    top: 72%;
+    left: 25%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-delay: 25s;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+@keyframes ring{
+    0%{scale: 0; opacity: 0.7;}
+    30%{scale: 1.6; opacity: 0;}
+    100%{opacity: 0;}
+}
+.krest1, .krest2{
+    display: none;
+}
+@media screen and (max-width: 1800px){
+.box1, .box2, .box3{
+    max-width: 1200px;
+}
+.question{
+    font-size: 45px;
+}
+label{
+    font-size: 25px;
+}
+}
+@media screen and (max-width: 1600px){
+.question{
+    font-size: 39px;
+}
+label{
+    font-size: 22px;
+}
+.box1, .box2, .box3{
+    max-width: 1100px;
+}
+.box2{
+    margin-top: 33vh;
+}
+html{
+    overflow-y: auto;
+}
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+.wrapper2{
+    scroll-snap-align: center;
+    height: 100vh;
+    z-index: 1;
+}
+.strdn{
+    display: none;
+}
+.strup{
+    display: none;
+}
+.yak{
+    display: none;
+}
+}
+@media screen and (max-width: 1400px){
+.question{
+    font-size: 35px;
+}
+label{
+    font-size: 20px;
+}
+.box1, .box2, .box3{
+    max-width: 900px;
+}
+}
+@media screen and (max-width: 1300px){
+.question{
+    font-size: 32px;
+}
+label{
+    font-size: 19px;
+}
+.box1, .box2, .box3{
+    max-width: 900px;
+    margin-top: 35vh;
+}
+.ball:nth-child(7){
+    display: none;
+}
+.ring2{
+    display: none;
+}
+}
+@media screen and (max-width: 1150px){
+.ball{
+    display: none;
+}
+.krest1{
+    top: 5%;
+    left: 5%;
+    width: 60px;
+    position: fixed;
+    display: block;
+    animation-name: krest1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.krest2{
+    bottom: 5%;
+    right: 5%;
+    width: 60px;
+    position: fixed;
+    display: block;
+    animation-name: krest2;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes krest1{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes krest2{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-360deg);}
+}
+}
+@media screen and (max-width: 850px){
+.box1, .box2, .box3{
+    max-width: 650px;
+}
+.question{
+    font-size: 28px;
+}
+label{
+    font-size: 17px;
+}
+.krest1, .krest2{
+width: 50px;
+}
+}
+@media screen and (max-width: 650px){
+.box1, .box2, .box3{
+    max-width: 560px;
+}
+.question{
+    font-size: 24px;
+}
+}
+@media screen and (max-width: 600px){
+.box1, .box2, .box3{
+    max-width: 520px;
+}
+.question{
+    font-size: 23px;
+}
+label{
+    font-size: 15px;
+}
+.krest1, .krest2{
+    width: 45px;
+}
+}
+@media screen and (max-width: 420px){
+    .question{
+        font-size: 21px;
+    }
+    label{
+        font-size: 15px;
+    }
+}
+.container{
+    width: 100px;
+    height: 97vh;
+    top: 1%;
+    left: 1%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container2{
+    width: 100px;
+    height: 97vh;
+    top: 1%;
+    right: 1%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    margin: 5px auto;
+    border-radius: 50px;
+}
+.ball:nth-child(1) {
+    background: linear-gradient(to right, rgb(150, 12, 131), rgb(184, 57, 247));
+    opacity: 0.3;
+    -webkit-animation: right 2.5s infinite ease-in-out;
+    -moz-animation: right 2.5s infinite ease-in-out;
+    animation: right 2.5s infinite ease-in-out;
+}
+.ball:nth-child(2) {
+    background: linear-gradient(to right, rgb(150, 12, 131), rgb(184, 57, 247));
+    opacity: 0.3;
+    -webkit-animation: left 2.6s infinite ease-in-out;
+    -moz-animation: left 2.6s infinite ease-in-out;
+    animation: left 2.6s infinite ease-in-out;
+}
+.ball:nth-child(3) {
+    background: linear-gradient(to right, rgb(150, 12, 131), rgb(184, 57, 247));
+    opacity: 0.3;
+    -webkit-animation: right 2.7s infinite ease-in-out;
+    -moz-animation: right 2.7s infinite ease-in-out;
+    animation: right 2.7s infinite ease-in-out;
+}
+.ball:nth-child(4) {
+    background: linear-gradient(to right, rgb(150, 12, 131), rgb(184, 57, 247));
+    opacity: 0.3;
+    -webkit-animation: left 2.8s infinite ease-in-out;
+    -moz-animation: left 2.8s infinite ease-in-out;
+    animation: left 2.8s infinite ease-in-out;
+}
+.ball:nth-child(5) {
+    background: linear-gradient(to right, rgb(150, 12, 131), rgb(184, 57, 247));
+    opacity: 0.3;
+    -webkit-animation: right 2.7s infinite ease-in-out;
+    -moz-animation: right 2.7s infinite ease-in-out;
+    animation: right 2.7s infinite ease-in-out;
+}
+.ball:nth-child(6) {
+    background: linear-gradient(to right, rgb(150, 12, 131), rgb(184, 57, 247));
+    opacity: 0.3;
+    -webkit-animation: left 2.6s infinite ease-in-out;
+    -moz-animation: left 2.6s infinite ease-in-out;
+    animation: left 2.6s infinite ease-in-out;
+}
+.ball:nth-child(7) {
+    background: linear-gradient(to right, rgb(150, 12, 131), rgb(184, 57, 247));
+    opacity: 0.3;
+    -webkit-animation: right 2.5s infinite ease-in-out;
+    -moz-animation: right 2.5s infinite ease-in-out;
+    animation: right 2.5s infinite ease-in-out;
+}
+  
+@-webkit-keyframes right {
+    0% {
+      -webkit-transform: translate(-15px);
+    }
+    50% {
+      -webkit-transform: translate(15px);
+    }
+    100% {
+      -webkit-transform: translate(-15px);
+    }
+}
+  
+@-webkit-keyframes left {
+    0% {
+      -webkit-transform: translate(15px);
+    }
+    50% {
+      -webkit-transform: translate(-15px);
+    }
+    100% {
+      -webkit-transform: translate(15px);
+    }
+}
+  
+@-moz-keyframes right {
+    0% {
+      -moz-transform: translate(-15px);
+    }
+    50% {
+      -moz-transform: translate(15px);
+    }
+    100% {
+      -moz-transform: translate(-15px);
+    }
+}
+  
+@-moz-keyframes left {
+    0% {
+      -moz-transform: translate(15px);
+    }
+    50% {
+      -moz-transform: translate(-15px);
+    }
+    100% {
+      -moz-transform: translate(15px);
+    }
+}
+
+@keyframes right {
+    0% {
+      transform: translate(-15px);
+    }
+    50% {
+      transform: translate(15px);
+    }
+    100% {
+      transform: translate(-15px);
+    }
+}
+  
+@keyframes left {
+    0% {
+      transform: translate(15px);
+    }
+    50% {
+      transform: translate(-15px);
+    }
+    100% {
+      transform: translate(15px);
+    }
+}

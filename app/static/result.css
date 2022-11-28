@@ -1,0 +1,168 @@
+*,  
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    font-family: 'calibri', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    background-image: url("q12.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+.begintext{
+    padding-top: 2%;
+    margin: auto;
+    font-size: 37px;
+    text-align: center;
+    max-width: 1000px; 
+    padding-bottom: 40px;
+    color: rgb(57, 117, 247);
+}
+.text{
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+    max-width: 1000px;
+    padding-bottom: 20px;
+    color: rgb(80, 135, 254);
+}
+.ring{
+    top: 12%;
+    left: 75%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.ring2{
+    top: 39%;
+    left: 8%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.ring3{
+    top: 70%;
+    left: 70%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.ring4{
+    top: 5%;
+    left: 14%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-delay: 15s;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.ring5{
+    top: 60%;
+    left: 78%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-delay: 20s;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.ring6{
+    top: 72%;
+    left: 25%;
+    position: fixed;
+    opacity: 0;
+    animation-name: ring;
+    animation-delay: 25s;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+@keyframes ring{
+    0%{scale: 0; opacity: 0.7;}
+    30%{scale: 1.6; opacity: 0;}
+    100%{opacity: 0;}
+}
+@media screen and (max-width: 1400px){
+    .begintext{
+        font-size: 33px;
+    }
+    .text{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .begintext{
+        font-size: 30px;
+        max-width: 800px;
+    }
+    .text{
+        font-size: 15px;
+        max-width: 800px;
+    }
+}
+@media screen and (max-width: 900px){
+    .begintext{
+        font-size: 30px;
+        max-width: 700px;
+    }
+    .text{
+        font-size: 15px;
+        max-width: 700px;
+    }
+}
+@media screen and (max-width: 750px){
+    .begintext{
+        font-size: 25px;
+        max-width: 550px;
+    }
+    .text{
+        font-size: 14px;
+        max-width: 550px;
+    }
+}
+@media screen and (max-width: 600px){
+    .begintext{
+        font-size: 22px;
+        max-width: 430px;
+    }
+    .text{
+        font-size: 13px;
+        max-width: 430px;
+    }
+}
+@media screen and (max-width: 490px){
+    .begintext{
+        font-size: 19px;
+        max-width: 360px;
+    }
+    .text{
+        font-size: 12px;
+        max-width: 360px;
+    }
+}
+@media screen and (max-width: 420px){
+    .begintext{
+        font-size: 17px;
+        max-width: 300px;
+    }
+    .text{
+        font-size: 10px;
+        max-width: 300px;
+    }
+}
